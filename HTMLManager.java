@@ -17,5 +17,34 @@ public class HTMLManager {
    public Queue<HTMLTag> getTags(){
       return new LinkedList<>(this.tags);
    }
-  
+   
+   public String toString(){
+      String str = "";
+      
+      int initialSize = this.tags.size(); //to remember the original size 
+      
+      for(int i = 0; i < initialSize; i++){ //loop each item in the queue
+         HTMLTag currentTag = this.tags.remove();
+         
+         //convert the string, then trim the spaces 
+         str += currentTag.toString().trim(); 
+         
+         this.tags.add(currentTag); //put it back at the end of the queue
+      }
+      return str;
+   }
+          
 }
+
+
+
+
+
+
+/*
+# PROGRAM OUTPUT
+
+Paste the output from JGrasp here.
+Altering output will earn you an automatic zero for the assignment.
+
+*/
