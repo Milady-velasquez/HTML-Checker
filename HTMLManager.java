@@ -11,8 +11,11 @@ public class HTMLManager {
       
       //copy of the values into the new Queue
       this.tags = new LinkedList<>(html);
-  }
-  
-  
+   }
+   
+   //returns the queue of html tag being managed
+   public Queue<HTMLTag> getTags(){
+      return new LinkedList<>(this.tags);
+   }
   
 }
