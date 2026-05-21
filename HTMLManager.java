@@ -95,7 +95,60 @@ public class HTMLManager {
 /*
 # PROGRAM OUTPUT
 
-Paste the output from JGrasp here.
-Altering output will earn you an automatic zero for the assignment.
+  ----jGRASP exec: java HTMLChecker
+ ===============================
+ Processing tests/test1.html...
+ ===============================
+ HTML: <b><i><br /></b></i>
+ Checking HTML for errors...
+ HTML after fix: <b><i><br /></b></i>
+ ----> Something isn't working right! 
+ Fixed HTML should be: 
+ <b><i><br /></i></b>
+ 
+ ===============================
+ Processing tests/test2.html...
+ ===============================
+ HTML: <a><a><a></a>
+ Checking HTML for errors...
+ HTML after fix: <a><a><a></a>
+ ----> Something isn't working right! 
+ Fixed HTML should be: 
+ <a><a><a></a></a></a>
+ 
+ ===============================
+ Processing tests/test3.html...
+ ===============================
+ HTML: <br /></p></p>
+ Checking HTML for errors...
+ HTML after fix: <br /></p></p>
+ ----> Something isn't working right! 
+ Fixed HTML should be: 
+ <br />
+ 
+ ===============================
+ Processing tests/test4.html...
+ ===============================
+ HTML: <div><div><ul><li></li><li></li><li></ul></div>
+ Checking HTML for errors...
+ HTML after fix: <div><div><ul><li></li><li></li><li></ul></div>
+ ----> Something isn't working right! 
+ Fixed HTML should be: 
+ <div><div><ul><li></li><li></li><li></li></ul></div></div>
+ 
+ ===============================
+ Processing tests/test5.html...
+ ===============================
+ HTML: <div><h1></h1><div><img /><p><br /><br /><br /></div></div></table>
+ Checking HTML for errors...
+ HTML after fix: <div><h1></h1><div><img /><p><br /><br /><br /></div></div></table>
+ ----> Something isn't working right! 
+ Fixed HTML should be: 
+ <div><h1></h1><div><img /><p><br /><br /><br /></p></div></div>
+ 
+ ===============================
+ Failed tests: test1.html test2.html test3.html test4.html test5.html 
+ ===============================
+ 
 
 */
